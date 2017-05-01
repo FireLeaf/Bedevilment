@@ -1,0 +1,6 @@
+cmake
+pb2.5
+libevent new
+kcp 或 http://enet.bespin.org/
+行为树
+lua conf
