@@ -29,7 +29,7 @@
 
 class FFEntity;
 
-class FFComponent : public FFMemMonitored
+class FFComponent : public FFObject
 {
 	friend class FFEntity;
 public:

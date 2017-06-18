@@ -12,25 +12,30 @@
 
 #pragma once
 
+#include <unordered_map>
+
 class FFComponent;
 
 // 此类用来生成组件标记
 template<typename T>
 class FFComponentSign
 {
+private:
+	static const int sign = 0;
 public:
 	static CompSign_t Sign() {
-		return 0;
+		return static_cast<CompSign_t>(&sign);
 	}
 };
 
 /*
 	@Class 场景中实体
 */
-class FFEntity : public FFMemMonitored
+class FFEntity : public FFObject
 {
 public:
-	using ComponentMap = std::unordered_map<CompSign_t, FFComponent*>;
+	using FFComponentPtr = std::shared_ptr<FFComponent>;
+	using ComponentMap = std::unordered_map<CompSign_t, FFComponentPtr>;
 public:
 	// 根据类型来获取组件
 	template<typename T>
@@ -86,7 +91,7 @@ public:
 
 private:
 	// 通过组件标签来获取组件
-	FFComponent* GetComponentBySign(CompSign_t sign) const
+	FFComponentPtr GetComponentBySign(CompSign_t sign) const
 	{
 		auto CompIter = _EntityComponentMap.find(sign);
 		if (CompIter != _EntityComponentMap.end())
@@ -104,10 +109,45 @@ private:
 			_EntityComponentMap.erase(CompIter);
 		}
 	}
+public:
+	template<typename T>
+	void AddComponets()
+	{
+		AddComonent<T>();
+	}
 
+	template<typename T, typename ... Args>
+	void AddComponents()
+	{
+		AddComonent<T>();
+		AddComponents<Args...>;
+	}
+
+	template<typename Args ... args>
+	void CreateFromTemplate()
+	{
+
+	}
+private:
+	virtual void OnCreateObject()
+	{
+
+	}
+
+	virtual void OnDestoryObject()
+	{
+
+	}
 private:
 	// 实体上面的组件
 	ComponentMap _EntityComponentMap;
 	//std::vector
+public:
+	inline const FFTransform* Transform() const { return _Transform; }
+	inline FFTransform* Transform() { return _Transform; }
+private:
+	FFTransform* _Transform;
 };
+
+#define 
 

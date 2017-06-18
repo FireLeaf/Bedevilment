@@ -19,6 +19,9 @@
     <Filter Include="Common">
       <UniqueIdentifier>{c202911c-e378-4d64-9189-f6b206eeb938}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entity\Components">
+      <UniqueIdentifier>{e82b1d17-5497-442c-a1f1-55d038a52423}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity\Entity.hpp">
@@ -32,6 +35,15 @@
     </ClInclude>
     <ClInclude Include="Common\MemMonitored.hpp">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Event.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Components\Transform.hpp">
+      <Filter>Entity\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Object.hpp">
+      <Filter>Entity</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

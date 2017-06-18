@@ -22,7 +22,10 @@
     <ClInclude Include="Common\HostDef.hpp" />
     <ClInclude Include="Common\MemMonitored.hpp" />
     <ClInclude Include="Entity\Component.hpp" />
+    <ClInclude Include="Entity\Components\Transform.hpp" />
     <ClInclude Include="Entity\Entity.hpp" />
+    <ClInclude Include="Entity\Event.hpp" />
+    <ClInclude Include="Entity\Object.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}</ProjectGuid>
