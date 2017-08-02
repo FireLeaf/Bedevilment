@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B7EC95A7-B253-3514-892F-FAC624A0112A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\479eed69829b5a338f39f30da31624d6\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/eXtendedMirror.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/479eed69829b5a338f39f30da31624d6/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\Debug\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/eXtendedMirror.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/479eed69829b5a338f39f30da31624d6/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\Debug\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/eXtendedMirror.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/479eed69829b5a338f39f30da31624d6/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\Debug\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/eXtendedMirror.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/479eed69829b5a338f39f30da31624d6/generate.stamp.rule;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\Debug\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

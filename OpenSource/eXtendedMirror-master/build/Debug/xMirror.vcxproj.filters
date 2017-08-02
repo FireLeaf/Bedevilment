@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\ArrayType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CompoundClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Constant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Enum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Function_Gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Member.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Method.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Method_Gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Namespace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\PointerType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\PrimitiveType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\SpecialMembers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Template.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\TemplArg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Type.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Variable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Variant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Variant_Gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\EnumKeyNotFoundException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\NotFoundException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\MemberExceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\PropertyRangeException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\PropertySetException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\VariantCostnessException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\VariantTypeException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\TemplArgException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Utils\Names.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AACA5B80-7BD5-389F-B623-3C4720C2E18B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
