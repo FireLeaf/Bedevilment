@@ -241,6 +241,7 @@ Class& createClass()
         }
         catch(const NotFoundException& e)
         {
+			(void)e;
             std::pair<std::string, std::string> nameParts
                     = splitName(tempjateName, NameTail);
             Namespace& name_space = xm::defineNamespace(nameParts.first);

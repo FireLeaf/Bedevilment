@@ -56,14 +56,14 @@ const Type& Variant::getType() const
 inline
 bool Variant::isReference() const
 {
-    return flags_ & Reference;
+    return ((flags_ & Reference) == Reference);
 }
     
 
 inline
 bool Variant::isConst() const
 {
-    return flags_ & Const;
+    return ((flags_ & Const) == Const);
 }
 
 

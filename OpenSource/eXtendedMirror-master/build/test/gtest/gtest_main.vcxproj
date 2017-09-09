@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{3FB356B8-7B60-3475-8975-825A0D37860E}</ProjectGUID>
+    <ProjectGUID>{219113BD-9B8C-37C7-B0D0-A2E5DB78EEDB}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>gtest_main</ProjectName>
-    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -59,27 +58,27 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gtest_main.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gtest_main</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gtest_main.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gtest_main</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">gtest_main.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">gtest_main</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">gtest_main.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">gtest_main</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions)  -J</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> -J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -94,15 +93,15 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWarningAsError>true</TreatWarningAsError>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,13 +109,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Lib>
-      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions)  -J</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> -J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -135,10 +134,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,13 +145,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Lib>
-      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions)  -J</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> -J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -171,10 +170,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -182,13 +181,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Lib>
-      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions)  -J</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> -J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -207,10 +206,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN32;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -218,14 +217,14 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Lib>
-      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
+    <CustomBuild Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/build/test/gtest/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,12 +232,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPythonInterp.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindThreads.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckLibraryExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckSymbolExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.c.in;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/build/test/gtest/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,12 +245,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPythonInterp.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindThreads.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckLibraryExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckSymbolExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.c.in;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/build/test/gtest/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,12 +258,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPythonInterp.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindThreads.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckLibraryExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckSymbolExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.c.in;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master -BD:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/build/test/gtest/CMakeFiles/generate.stamp
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,22 +271,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/test/gtest-1.7.0/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\cmake\internal_utils.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPythonInterp.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindThreads.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckLibraryExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckSymbolExists.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CheckIncludeFile.c.in;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;E:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\src\gtest_main.cc"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\src\gtest_main.cc"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\ZERO_CHECK.vcxproj">
-      <Project>B7EC95A7-B253-3514-892F-FAC624A0112A</Project>
-      <Name>ZERO_CHECK</Name>
+    <ProjectReference Include="E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/ZERO_CHECK.vcxproj">
+      <Project>4F1674E6-98BC-3C7A-BD81-8D12B0C945A3</Project>
     </ProjectReference>
-    <ProjectReference Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\gtest\gtest.vcxproj">
-      <Project>40CC9AC4-78C3-3B17-98DD-A1A738988014</Project>
-      <Name>gtest</Name>
+    <ProjectReference Include="E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/build/test/gtest/gtest.vcxproj">
+      <Project>E3268034-FC0B-3113-BD52-AF1B8EC0179E</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

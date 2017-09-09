@@ -19,13 +19,154 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Common\HostDef.hpp" />
-    <ClInclude Include="Common\MemMonitored.hpp" />
-    <ClInclude Include="Entity\Component.hpp" />
-    <ClInclude Include="Entity\Components\Transform.hpp" />
-    <ClInclude Include="Entity\Entity.hpp" />
-    <ClInclude Include="Entity\Event.hpp" />
-    <ClInclude Include="Entity\Object.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\3rdparty\catch.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\3rdparty\simplesignal.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\config.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\deps\Dependencies.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\Entity.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\entityx.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\Event.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\help\NonCopyable.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\help\Pool.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\help\Timer.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\quick.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\System.h" />
+    <ClInclude Include="..\..\..\OpenSource\entityx-master\entityx\tags\TagsComponent.h" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\ArrayType.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Bind.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\BindFunction.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\BindGetNSetProperty.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\BindMethod.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Class.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\CompoundClass.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Constant.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\ConstantImpl.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Empty.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Enum.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\EnumKeyNotFoundException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\MemberExceptions.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\NotFoundException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\PropertyRangeException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\PropertySetException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\TemplArgException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\VariantCostnessException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Exceptions\VariantTypeException.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Function.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\FunctionImpl.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Item.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\MakeSign.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Member.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Method.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\MethodImpl.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Namespace.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Parameter.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\ParamLists.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\PointerType.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\PrimitiveType.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Property.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\PropertyArrayField.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\PropertyField.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\PropertyGetterNSetter.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\ReflectStd.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Register.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\RegistrationHelpers.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\RegistrationMacros.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Shortcuts.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\SpecialMembers.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\SpecialMembersImpl.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\TemplArg.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Template.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\TemplateRegistrationMacros.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Type.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Typedefs.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\TypeTraits.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Utils\Bounds.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Utils\Containers.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Utils\Debug.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Utils\Names.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Utils\Utils.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Variable.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\VariableImpl.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Variant.hpp" />
+    <ClInclude Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\xMirror.hpp" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\fix16.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\fix16.hpp" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\fix16_trig_sin_lut.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\fixmath.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\fract32.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\int64.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmath\uint32.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixarray.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixmatrix.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixquat.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixstring.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixvector2d.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixvector3d.h" />
+    <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\unittests.h" />
+    <ClInclude Include="Core\Component\Map.h" />
+    <ClInclude Include="Core\Component\StateScript.h" />
+    <ClInclude Include="Core\Component\Transform.h" />
+    <ClInclude Include="Core\Context.h" />
+    <ClInclude Include="Core\StateScript\StateScriptBase.h" />
+    <ClInclude Include="Core\System\StateScriptSystem.h" />
+    <ClInclude Include="Core\TypeDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenSource\entityx-master\entityx\Entity.cc" />
+    <ClCompile Include="..\..\..\OpenSource\entityx-master\entityx\Event.cc" />
+    <ClCompile Include="..\..\..\OpenSource\entityx-master\entityx\help\Pool.cc" />
+    <ClCompile Include="..\..\..\OpenSource\entityx-master\entityx\help\Timer.cc" />
+    <ClCompile Include="..\..\..\OpenSource\entityx-master\entityx\System.cc" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\ArrayType.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Class.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\CompoundClass.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Constant.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Enum.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\EnumKeyNotFoundException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\MemberExceptions.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\NotFoundException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\PropertyRangeException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\PropertySetException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\TemplArgException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\VariantCostnessException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Exceptions\VariantTypeException.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Function.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Function_Gen.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Item.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Member.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Method.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Method_Gen.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Namespace.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\PointerType.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\PrimitiveType.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Property.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Register.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\SpecialMembers.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\TemplArg.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Template.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Type.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Utils\Names.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Variable.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Variant.cpp" />
+    <ClCompile Include="..\..\..\OpenSource\eXtendedMirror-master\src\XM\Variant_Gen.cpp" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\fix16.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\fix16_exp.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\fix16_sqrt.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\fix16_str.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\fix16_trig.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\fract32.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmath\uint32.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixarray.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixmatrix.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixquat.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixstring.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixvector2d.c" />
+    <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixvector3d.c" />
+    <ClCompile Include="Core\Context.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Register.inl" />
+    <None Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Variant.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}</ProjectGuid>
@@ -98,6 +239,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FFHOST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\OpenSource\entityx-master;..\..\..\OpenSource\eXtendedMirror-master\include;..\..\3rd\libfixmath;..\..\3rd\libfixmath\libfixmath;..\..\3rd\libfixmath\libfixmatrix;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

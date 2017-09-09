@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\entityx-master\CMakeFiles\509709dc680f97eb475cd3d5c2fa9cd7\generate.stamp.rule">
+    <CustomBuild Include="E:\ProjectBedevilment\Bedevilment\OpenSource\entityx-master\CMakeFiles\a8d8909d6abaec049b3f96f62b7171b1\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{974931AC-86F8-38ED-8CA9-2C1768474B16}</UniqueIdentifier>
+      <UniqueIdentifier>{6153F152-92A8-3F1C-B208-3E72283F80B4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

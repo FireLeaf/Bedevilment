@@ -206,18 +206,18 @@ const Const_Method_Set& Class::getMethods(bool inherited) const
 bool Class::hasProperty(const string& propertyName, bool inherited) const
 {
     if (inherited)
-        return ptrSet::findByKey(properties_, propertyName);
+        return (ptrSet::findByKey(properties_, propertyName) != nullptr);
     else
-        return ptrSet::findByKey(ownProperties_, propertyName);
+        return (ptrSet::findByKey(ownProperties_, propertyName) != nullptr);
 }
 
 
 bool Class::hasMethod(const string& methodName, bool inherited) const
 {
     if (inherited)
-        return ptrSet::findByKey(methods_, methodName);
+        return (ptrSet::findByKey(methods_, methodName) != nullptr);
     else
-        return ptrSet::findByKey(ownMethods_, methodName);
+        return (ptrSet::findByKey(ownMethods_, methodName) != nullptr);
 }
 
 

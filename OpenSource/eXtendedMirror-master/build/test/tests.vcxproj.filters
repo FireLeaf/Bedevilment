@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Button.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Control.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Control.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\MyButton.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\MyButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\MyTemplate.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\MyTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\MyTemplate2.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\MyTemplate2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Rectangle.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Shape.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\FactoryFunctions.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\FactoryFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Tests.cpp">
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\src\CMakeLists.txt" />
+    <CustomBuild Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{AACA5B80-7BD5-389F-B623-3C4720C2E18B}</UniqueIdentifier>
+      <UniqueIdentifier>{9E49B989-A525-3981-A41F-51BDDB3D8DEC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

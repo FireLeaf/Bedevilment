@@ -117,8 +117,8 @@ bool Method::before_(const Item& item) const
     if (!fullSignature_ || !other.fullSignature_)
         return false;
 
-    ushort paramN1 = params_.size();
-    ushort paramN2 = other.params_.size();
+    ushort paramN1 = (ushort)params_.size();
+    ushort paramN2 = (ushort)other.params_.size();
     ushort paramN = std::min(paramN1, paramN2);
     for (uint i = 1; i < paramN; i++)
     {

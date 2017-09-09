@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\0663bd14a274e029b4e609afb7c03dd6\RUN_TESTS_force.rule">
+    <CustomBuild Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\8c21a278979035cd56a95b980d0baa9e\RUN_TESTS_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{75EFE01C-1C2A-3E7F-967F-9EFBDEB17A99}</UniqueIdentifier>
+      <UniqueIdentifier>{E53E05B6-5542-3E58-8632-87384F95BDAA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

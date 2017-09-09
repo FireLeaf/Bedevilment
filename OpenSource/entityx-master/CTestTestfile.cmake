@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: D:/FireLeaf/Bedevilment/OpenSource/entityx-master
-# Build directory: D:/FireLeaf/Bedevilment/OpenSource/entityx-master
+# Source directory: E:/ProjectBedevilment/Bedevilment/OpenSource/entityx-master
+# Build directory: E:/ProjectBedevilment/Bedevilment/OpenSource/entityx-master
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

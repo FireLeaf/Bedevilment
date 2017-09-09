@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{005A31D7-CB83-3D37-9E11-3DB2E869C363}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>xMirror</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xMirror.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xMirror</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xMirror.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xMirror</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">xMirror.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">xMirror</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xMirror.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">xMirror</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"E:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master -BE:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master --check-stamp-file E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/src/XM/CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\ArrayType.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Class.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\CompoundClass.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Constant.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Enum.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Function.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Function_Gen.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Item.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Member.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Method.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Method_Gen.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Namespace.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\PointerType.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\PrimitiveType.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Property.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Register.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\SpecialMembers.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Template.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\TemplArg.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Type.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Variable.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Variant.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Variant_Gen.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\EnumKeyNotFoundException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\NotFoundException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\MemberExceptions.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\PropertyRangeException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\PropertySetException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\VariantCostnessException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\VariantTypeException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Exceptions\TemplArgException.cpp"  />
+    <ClCompile Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\src\XM\Utils\Names.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/ZERO_CHECK.vcxproj">
+      <Project>4F1674E6-98BC-3C7A-BD81-8D12B0C945A3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{6776B275-3BC7-3CE4-B455-BAC8A6F32255}</ProjectGUID>
+    <ProjectGUID>{9B3A863D-B465-330E-8E59-311E9BBFE2F1}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>RUN_TESTS</ProjectName>
-    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -66,7 +65,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +75,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
+"E:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -88,7 +87,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -98,7 +97,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
+"E:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -110,7 +109,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,7 +119,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
+"E:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -132,7 +131,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\gtest-1.7.0\include;E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\test\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -142,7 +141,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
+"E:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process -C $(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -153,7 +152,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\28abd2aa0879ca914b6f1b1b129d2330\RUN_TESTS_force.rule">
+    <CustomBuild Include="E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\CMakeFiles\c6131e846d2f8ba7ee5730637981ae18\RUN_TESTS_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 cd .
@@ -164,8 +163,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/28abd2aa0879ca914b6f1b1b129d2330/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/c6131e846d2f8ba7ee5730637981ae18/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
@@ -177,8 +176,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/28abd2aa0879ca914b6f1b1b129d2330/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/c6131e846d2f8ba7ee5730637981ae18/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
@@ -190,8 +189,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/28abd2aa0879ca914b6f1b1b129d2330/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/c6131e846d2f8ba7ee5730637981ae18/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
@@ -203,15 +202,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/FireLeaf/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/28abd2aa0879ca914b6f1b1b129d2330/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/CMakeFiles/c6131e846d2f8ba7ee5730637981ae18/RUN_TESTS_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\ProjectBedevilment\Bedevilment\OpenSource\eXtendedMirror-master\build\test\CMakeFiles\RUN_TESTS_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\FireLeaf\Bedevilment\OpenSource\eXtendedMirror-master\ZERO_CHECK.vcxproj">
-      <Project>B7EC95A7-B253-3514-892F-FAC624A0112A</Project>
-      <Name>ZERO_CHECK</Name>
+    <ProjectReference Include="E:/ProjectBedevilment/Bedevilment/OpenSource/eXtendedMirror-master/ZERO_CHECK.vcxproj">
+      <Project>4F1674E6-98BC-3C7A-BD81-8D12B0C945A3</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
