@@ -162,7 +162,10 @@
     <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixstring.c" />
     <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixvector2d.c" />
     <ClCompile Include="..\..\3rd\libfixmath\libfixmatrix\fixvector3d.c" />
+    <ClCompile Include="Core\Component\StateScript.cpp" />
     <ClCompile Include="Core\Context.cpp" />
+    <ClCompile Include="Core\StateScript\StateScriptBase.cpp" />
+    <ClCompile Include="Core\TypeDefReflect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Register.inl" />
@@ -239,7 +242,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FFHOST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\..\OpenSource\entityx-master;..\..\..\OpenSource\eXtendedMirror-master\include;..\..\3rd\libfixmath;..\..\3rd\libfixmath\libfixmath;..\..\3rd\libfixmath\libfixmatrix;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\OpenSource\entityx-master;..\..\..\OpenSource\eXtendedMirror-master\include;..\..\3rd\libfixmath;..\..\3rd\libfixmath\libfixmath;..\..\3rd\libfixmath\libfixmatrix;Core;..\..\..\Client\UnityClient\build\lua-5.1.5\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

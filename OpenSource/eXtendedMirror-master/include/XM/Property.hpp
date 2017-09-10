@@ -149,7 +149,14 @@ public:
      * @return This Property.
      */
     virtual Property& setMaxValue(double maxValue);
-    
+
+	/*
+	virtual int getMinValue() const;
+	virtual Property& setMinValue(int minValue);
+	virtual int getMaxValue() const;
+	virtual Property& setMaxValue(int maxValue);
+	*/
+
     /**
      * Ask how the property data is retrieved, that is by value, by reference
      * of by a constant reference.

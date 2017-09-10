@@ -42,6 +42,7 @@
 
 #include "Variant.hpp"
 #include <iostream>
+#include <cassert>
 
 namespace xm{
 
@@ -107,20 +108,26 @@ public:
     
     Property& setMinValue(double minValue)
     {
-        this->minValue_ = minValue;
+		// fix by yangcao, unsafe code with lockstep
+		assert(false);
+        this->minValue_ = (NumT)minValue;
         return *this;
     }
     
     
     double getMaxValue() const
     {
+		// fix by yangcao, unsafe code with lockstep
+		assert(false);
         return maxValue_;
     }
     
     
     Property& setMaxValue(double maxValue)
     {
-        this->maxValue_ = maxValue;
+		// fix by yangcao, unsafe code with lockstep
+		assert(false);
+        this->maxValue_ = (NumT)maxValue;
         return *this;
     }
     

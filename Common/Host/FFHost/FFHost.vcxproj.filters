@@ -470,6 +470,15 @@
     <ClCompile Include="Core\Context.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Component\StateScript.cpp">
+      <Filter>Core\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StateScript\StateScriptBase.cpp">
+      <Filter>Core\StateScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TypeDefReflect.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\OpenSource\eXtendedMirror-master\include\XM\Register.inl">

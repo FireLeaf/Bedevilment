@@ -23,6 +23,6 @@ struct FFTransformComponent
 XM_DECLARE_CLASS(FFTransformComponent);
 XM_DEFINE_CLASS(FFTransformComponent)
 {
-	XM_BIND_VARIABLE("Position_");
-	XM_BIND_VARIABLE("Direction_");
+	bindProperty(XM_MNP(Position_));
+	bindProperty(XM_MNP(Direction_));
 }

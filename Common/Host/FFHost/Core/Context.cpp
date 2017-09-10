@@ -12,7 +12,9 @@
 
 #include "Context.h"
 #include "Component/Transform.h"
+#include "StateScript/StateScriptBase.h"
 #include "Component/StateScript.h"
+#include "System/StateScriptSystem.h"
 
 FFContext::FFContext()
 {

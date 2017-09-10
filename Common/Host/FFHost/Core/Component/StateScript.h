@@ -14,16 +14,12 @@
 
 #include "TypeDef.h"
 
-class FFStateScript;
+class FFStateScriptBase;
 
-class FFStateScriptComponent
+struct FFStateScriptComponent
 {
-	std::list<FFStateScript*> ListStateScripts_;
+	std::list<FFStateScriptBase*> ListStateScripts_;
 };
 
+XM_DECLARE_CLASS(std::list<FFStateScriptBase*>)
 XM_DECLARE_CLASS(FFStateScriptComponent)
-XM_DEFINE_CLASS(FFStateScriptComponent)
-{
-	XM_BIND_VARIABLE("ListStateScripts_");
-}
-
