@@ -32,6 +32,13 @@ using FFQuat = qf16;
 using FFVector2 = v2d;
 using FFVector3 = v3d;
 */
+typedef int ffint;
+typedef float fffloat;
+typedef short ffshort;
+typedef char ffchar;
+typedef double ffdouble;
+typedef __int64_t ffint64;
+
 typedef fix16_t FFFloat;
 typedef mf16 FFMatrix;
 typedef qf16 FFQuat;

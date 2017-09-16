@@ -26,3 +26,31 @@ FFContext::~FFContext()
 {
 
 }
+
+bool FFContext::OnInitContext()
+{
+	if (!ConfigureContext())
+	{
+		return false;
+	}
+
+	return true;
+}
+
+bool FFContext::ConfigureContext()
+{
+	systems.add<FFStateScriptSystem>();
+	systems.configure();
+
+	return true;
+}
+
+void FFContext::OnSimulateContext(int timeDelta)
+{
+	systems.update_all(timeDelta);
+}
+
+void FFContext::OnDestroyContext()
+{
+
+}

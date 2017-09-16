@@ -18,5 +18,5 @@ XM_DEFINE_CLASS(std::list<FFStateScriptBase*>)
 
 XM_DEFINE_CLASS(FFStateScriptComponent)
 {
-	bindProperty(XM_MNP(ListStateScripts_));
+	bindProperty(XM_MNP(_ListStateScripts));
 }

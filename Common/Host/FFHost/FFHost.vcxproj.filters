@@ -315,6 +315,9 @@
     <ClInclude Include="Core\System\StateScriptSystem.h">
       <Filter>Core\System</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Component\Command.h">
+      <Filter>Core\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\OpenSource\entityx-master\entityx\Entity.cc">

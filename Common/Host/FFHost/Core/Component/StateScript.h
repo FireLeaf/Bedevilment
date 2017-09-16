@@ -18,7 +18,9 @@ class FFStateScriptBase;
 
 struct FFStateScriptComponent
 {
-	std::list<FFStateScriptBase*> ListStateScripts_;
+	std::list<FFStateScriptBase*>		_ListStateScripts;
+	std::vector<FFStateScriptBase*>		_DelayStateScripts;
+	bool								_IsInProcessState;
 };
 
 XM_DECLARE_CLASS(std::list<FFStateScriptBase*>)

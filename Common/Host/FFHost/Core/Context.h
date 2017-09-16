@@ -12,9 +12,26 @@
 
 #pragma once
 
-class FFContext
+#include "entityx/entityx.h"
+
+namespace ex = entityx;
+
+class FFMapComponent;
+
+class FFContext : public ex::EntityX
 {
 public:
 	FFContext();
 	virtual ~FFContext();
+public:
+	virtual bool OnInitContext();
+	virtual void OnSimulateContext(int timeDelta);
+	virtual void OnDestroyContext();
+
+	//virtual void StartContext();
+	//virtual void JumpContext();
+private:
+	bool ConfigureContext();
+private:
+	FFMapComponent*		_MapComponent;	// µ¥Àý
 };
