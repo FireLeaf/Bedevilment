@@ -104,11 +104,18 @@
     <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\fixvector3d.h" />
     <ClInclude Include="..\..\3rd\libfixmath\libfixmatrix\unittests.h" />
     <ClInclude Include="Core\Component\Command.h" />
+    <ClInclude Include="Core\Component\EquipInventory.h" />
     <ClInclude Include="Core\Component\Map.h" />
+    <ClInclude Include="Core\Component\Property.h" />
     <ClInclude Include="Core\Component\StateScript.h" />
+    <ClInclude Include="Core\Component\Status.h" />
     <ClInclude Include="Core\Component\Transform.h" />
     <ClInclude Include="Core\Context.h" />
+    <ClInclude Include="Core\StateScript\MoveStateScript.h" />
+    <ClInclude Include="Core\StateScript\PathMoveStateScript.h" />
+    <ClInclude Include="Core\StateScript\PushMoveStateScript.h" />
     <ClInclude Include="Core\StateScript\StateScriptBase.h" />
+    <ClInclude Include="Core\StateScript\TraceMoveStateScript.h" />
     <ClInclude Include="Core\System\StateScriptSystem.h" />
     <ClInclude Include="Core\TypeDef.h" />
   </ItemGroup>

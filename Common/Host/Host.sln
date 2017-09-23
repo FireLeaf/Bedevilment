@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FFHost", "FFHost\FFHost.vcxproj", "{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FFHostProxy", "FFHostProxy\FFHostProxy.vcxproj", "{5B6F7906-079C-4AC7-A595-EE309180FC02}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "..\..\Test\Test\Test.vcxproj", "{C17F5A42-5F99-4CFB-81FE-27153B095798}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Debug|x64.ActiveCfg = Debug|x64
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Debug|x64.Build.0 = Debug|x64
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Debug|x86.ActiveCfg = Debug|Win32
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Debug|x86.Build.0 = Debug|Win32
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Release|x64.ActiveCfg = Release|x64
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Release|x64.Build.0 = Release|x64
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Release|x86.ActiveCfg = Release|Win32
+		{4C32EEA4-FDCB-4050-B026-0B5A9F11EC4B}.Release|x86.Build.0 = Release|Win32
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Debug|x64.ActiveCfg = Debug|x64
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Debug|x64.Build.0 = Debug|x64
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Debug|x86.ActiveCfg = Debug|Win32
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Debug|x86.Build.0 = Debug|Win32
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Release|x64.ActiveCfg = Release|x64
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Release|x64.Build.0 = Release|x64
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Release|x86.ActiveCfg = Release|Win32
+		{5B6F7906-079C-4AC7-A595-EE309180FC02}.Release|x86.Build.0 = Release|Win32
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Debug|x64.ActiveCfg = Debug|x64
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Debug|x64.Build.0 = Debug|x64
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Debug|x86.ActiveCfg = Debug|Win32
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Debug|x86.Build.0 = Debug|Win32
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Release|x64.ActiveCfg = Release|x64
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Release|x64.Build.0 = Release|x64
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Release|x86.ActiveCfg = Release|Win32
+		{C17F5A42-5F99-4CFB-81FE-27153B095798}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal
