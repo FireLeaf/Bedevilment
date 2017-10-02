@@ -1,0 +1,92 @@
+{
+	"Version":
+	"Nodes":[
+		{
+			"Name"		: "OnActive",
+			"NodeType"	: "LifeCycleEvent",
+			"NodeID"	: 1024,
+			"Position"	: [90, 8, 00],
+			"OutFlow"	: 0,
+			"OutPin" 	: [
+				{
+					"Name"	: "EntityID",
+					"Node"	: "dfdsfdsfdasf",
+					"InPin"	: "InEntityID"
+				},
+				{
+					"Name"	: "LifeTime",
+					"Value"	: "100"
+				}
+			]
+		},
+		{
+			"Name"		: "OnPlayerDead",
+			"NodeType"	: "GameEvent",
+			"NodeID"	: 1025,
+			"Position"	: [90, 8, 00],
+			"OutFlow"	: 0,
+			"OutPin" 	: [
+				{
+					"Name"	: "EntityID",
+					"Node"	: 9087,
+					"InPin"	: "InEntityID"
+				},
+				{
+					"Name"	: "LifeTime",
+					"Value"	: "100"
+				}
+			]
+		},
+		{
+			"NodeType"	: "Loop",
+			"NodeID"	: 1026,
+			"Position"	: [90, 8, 00],
+			"OutFlow"	: 1029,
+			"BodyFlow"	: 2098,
+			"InPin"		: [
+				{
+					"Name"	: "StartIndex",
+					"Value"	: 1
+				},
+				{
+					"Name"	: "EndIndex",
+					"Value"	: 1
+				}
+			],
+			"OutPin" 	: [
+				{
+					"Name"	: "index",
+					"Node"	: 9866,
+					"InPin"	: "Index"
+				},
+				{
+					"Name"	: "index",
+					"Node"	: 9886,
+					"InPin"	: "index1"
+				}
+			]
+		},
+		{
+			"NodeType"	: "Logic",
+			"LogicType"	: "And",
+			"NodeID"	: 1026,
+			"Position"	: [90, 8, 00],
+			"InPin"		: [
+				{
+					"Name"	: "Left",
+					"Value"	: false
+				}
+			],
+			"OutPin" 	: [
+				{
+					"Node"	: 8999,
+					"InPin"	: ""
+				},
+				{
+					"Node"	: 9877,
+					"InPin"	: "InEntityID"
+				}
+			]
+		}
+	]
+}

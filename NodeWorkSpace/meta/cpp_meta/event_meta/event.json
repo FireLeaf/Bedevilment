@@ -1,0 +1,9 @@
+{
+	"TestEvent" : [
+		{ "Name" : "test1", "Type" : "int" },
+		{ "Name" : "test2",	"Type" : "string" }
+	],
+	"PlayerOnDiedEvent" :[
+		{ "Name" : "ishero", "Type" : "boolean"}
+	]
+}

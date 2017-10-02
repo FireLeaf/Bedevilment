@@ -24,6 +24,11 @@ class FFDragableGraphicItem(QGraphicsItem):
             painter.drawRect(self.boundingRect())
         #pass
 
+    def itemChange(self, change, Any):
+        if change == QGraphicsItem.ItemPositionHasChanged:
+            print("Position changed")
+        return super(FFDragableGraphicItem, self).itemChange(change, Any)
+
     def hoverEnterEvent(self, event):
         cursor = QCursor(Qt.OpenHandCursor)
         QApplication.instance().setOverrideCursor(cursor)
@@ -89,6 +94,7 @@ class FFNodeGraphicsView(QGraphicsView):
         self.regionItem = None
 
         wordScene = QGraphicsScene()
+        self.wordScene = wordScene
         self.setScene(wordScene)
         self.setSceneRect(0, 0, 100000, 100000)
         # workSpace.setBaseSize(1000, 1000)
@@ -116,8 +122,7 @@ class FFNodeGraphicsView(QGraphicsView):
     def createNodeItem(self):
         nodeItem = FFDragableGraphicItem(None)  # QGraphicsRectItem()
 
-        nodeItem.setFlags(QGraphicsItem.ItemIsSelectable |
-                          QGraphicsItem.ItemIsMovable)
+        nodeItem.setFlags(QGraphicsItem.ItemSendsGeometryChanges)
 
         buttonItem = QGraphicsProxyWidget(nodeItem)
         button = QPushButton()
@@ -134,11 +139,13 @@ class FFNodeGraphicsView(QGraphicsView):
         input = QLineEdit()
         inputItem.setWidget(input)
 
-        pinItem = FFPinItem(nodeItem)
+        pinItem = FFPinItem(None)
         pinItem.setPos(0, 80)
+        pinItem.setParentItem(nodeItem)
 
-        pinItem = FFPinItem(nodeItem)
+        pinItem = FFPinItem(None)
         pinItem.setPos(188, 80)
+        pinItem.setParentItem(nodeItem)
 
         return nodeItem
 

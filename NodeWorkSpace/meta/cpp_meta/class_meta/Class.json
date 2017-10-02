@@ -1,0 +1,81 @@
+{
+	"Class" : [
+		{
+			"Name"		: "PropertyComponent",
+			"Type"		: "Component",
+			"Field"		: [
+				{ "Name" : "test1", "Type" : "int" },
+				{ "Name" : "test2",	"Type" : "string" }
+			]
+		},
+		{
+			"Name"		: "TestEvent",
+			"Type"		: "Event",
+			"Field"		: [
+				{ "Name" : "test1", "Type" : "int" },
+				{ "Name" : "test2",	"Type" : "string" }
+			]
+		},
+		{
+			"Name" 		: "StateScriptBase",
+			"Parent"	: "None",
+			"Type"		: "Class",
+			"Field"		: [
+				{ "Name" : "test1", "Type" : "int" },
+				{ "Name" : "test2",	"Type" : "string" }
+			],
+			"Method"	: [
+				{
+					"Static"	: "false",
+					"Name" 		: "Test",
+					"Parameters": [
+						{
+							"Name" : "test1",
+							"Type" : "int"
+						}
+					],
+					"Return"	: [
+						{
+							"Type" : "void"
+						}
+					]
+				},
+				{
+					"Static"	: "true",
+					"Name" 		: "Test1"
+				}
+			]
+		},
+		{
+			"Name" 		: "PushMoveStateScript",
+			"Parent"	: "StateScriptBase",
+			"Type"		: "Class",
+			"Field"		: [
+				{ "Name" : "test1", "Type" : "int" },
+				{ "Name" : "test2",	"Type" : "string" }
+			],
+			"Method"	: [
+				{
+					"Static"	: "false",
+					"Name" 		: "Test",
+					"Parameters": [
+						{
+							"Name" : "test1",
+							"Type" : "int"
+						}
+					],
+					"Return"	: [
+						{
+							"Type" : "void"
+						}
+					]
+				},
+				{
+					"Static"	: "true",
+					"Name" 		: "Test1"
+				}
+			]
+		}
+	]
+
+}
