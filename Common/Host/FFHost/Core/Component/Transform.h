@@ -16,13 +16,13 @@
 
 struct FFTransformComponent
 {
-	FFVector3	Position_;		// 位置
-	FFVector3	Direction_;		// 朝向
+	FFVector3	_Position;		// 位置
+	FFVector3	_Direction;		// 朝向
 };
 
 XM_DECLARE_CLASS(FFTransformComponent);
 XM_DEFINE_CLASS(FFTransformComponent)
 {
-	bindProperty(XM_MNP(Position_));
-	bindProperty(XM_MNP(Direction_));
+	bindProperty(XM_MNP(_Position));
+	bindProperty(XM_MNP(_Direction));
 }

@@ -1,7 +1,9 @@
 from PyQt5.QtWidgets import QGraphicsItem, QGraphicsView, QGraphicsPathItem, QGraphicsRectItem, QTabBar, QGraphicsScene, QGraphicsLineItem
+from PyQt5.QtGui import QBrush
 from PyQt5.Qt import *
 
 from Graph.Help.Util import *
+from GraphView.Help.ResUtil import FFResUtil
 
 class FFNodeGraphView(QGraphicsView):
 	def __init__(self):
@@ -13,6 +15,9 @@ class FFNodeGraphView(QGraphicsView):
 		self._GraphScene = QGraphicsScene()
 		self.setScene(self._GraphScene)
 		self.setSceneRect(0, 0, 100000, 100000)
+
+		#self.setBackgroundBrush(QBrush(FFResUtil.GraphPixmap()))
+		self.setStyleSheet("background: transparent;border:0px")
 
 		self.scale(1.0, 1.0)
 		self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)

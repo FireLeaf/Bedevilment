@@ -22,6 +22,15 @@ class FFResUtil:
 			FFResUtil.flowPixmap = pixmap.scaled(16, 16)
 		return FFResUtil.flowPixmap
 
+	graphPixmap = None
+	@staticmethod
+	def GraphPixmap():
+		if FFResUtil.graphPixmap == None:
+			pixmap = QPixmap()
+			pixmap.load("Res/graph.jpg")
+			FFResUtil.graphPixmap = pixmap#pixmap.scaled(512, 512)
+		return FFResUtil.graphPixmap
+
 	@staticmethod
 	def CreateCursor(path):
 		pixSize = QSize(32, 32)

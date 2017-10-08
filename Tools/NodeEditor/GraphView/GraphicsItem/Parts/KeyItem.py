@@ -21,7 +21,7 @@ class FFKeyItem(QGraphicsPixmapItem):
 		bezierPath.moveTo(0, 0)
 
 		endPos = self._BezierItem.mapFromScene(self.mapToScene(event.pos()))
-		print(endPos)
+		#print(endPos)
 
 		xDelta = abs(endPos.x())
 		if xDelta < 150:
@@ -42,7 +42,7 @@ class FFKeyItem(QGraphicsPixmapItem):
 		self._BezierItem.setPath(bezierPath)
 
 	def paint(self, QPainter, QStyleOptionGraphicsItem, QWidget):
-		QPainter.drawRect(self.boundingRect())
+		#QPainter.drawRect(self.boundingRect())
 		super(FFKeyItem, self).paint(QPainter, QStyleOptionGraphicsItem, QWidget)
 
 	def CreateBezierItem(self):

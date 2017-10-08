@@ -113,7 +113,7 @@ public:
 	bool IsRunning() const { return _StateStatus == SSS_RUNGING; }
 	void Stop() {
 		if (!IsRunning()) return;
-		_StateStatus = SSS_RUNGING;
+		_StateStatus = SSS_STOP;
 		OnStop();
 	}
 	void Finish() {
@@ -202,7 +202,7 @@ public:
 public:
 	bool BindLuaScript(lua_State* L);
 public:
-	virtual void OnCreate() {
+	virtual void OnCreate() override {
 		FFStateScriptBase.OnCreate();
 		
 		// write here
@@ -211,14 +211,39 @@ public:
 		lua_pcall(L, 0, 0, -1);
 	}
 
-	virtual void OnActive() {
+	virtual void OnActive() override {
 		FFStateScriptBase.OnActive();
 		
 		// write here
 
 	}
 
-	virtual void OnSimulate(int timeDelta)
+	template<typename T>
+	void RegisterGameEvent() // this part export by program
+	{
+		const xm::Class& clazz = xm::getClass<T>();
+		//ASSERT_STREQ("::MyButton", clazz.getName().c_str());
+		typedef Simple::Signal<void(T&)> EventSignal;
+		std::function<void(lua_State, T&)>
+		for (clazz->getProperties(true))
+		{
+
+		}
+		EventEmit
+	}
+
+	void AddEventHandler(lua_State* L)
+	{
+		const char* eventName = lua_tostring(L, 1);
+		lua_pushvalue(L, 2);
+		int ref = luaL_ref(L, LUA_REGISTRYINDEX);
+		EventEmitter.AddHandler([=] {
+			lua_rawgeti(L, LUA_REGISTRYINDEX, ref);
+			lua_
+		})
+	}
+
+	virtual void OnSimulate(int timeDelta) override
 	{
 		FFStateScriptBase.OnSimulate(timeDelta);
 		if (!IsRunning()) return;
@@ -230,22 +255,22 @@ public:
 		}
 	}
 
-	virtual void OnDeactive() {
+	virtual void OnDeactive() override {
 		// write here
 
 		FFStateScriptBase.OnDeactive();
 	}
 
-	virtual void OnDestroy() {
+	virtual void OnDestroy() override {
 		// write here
 
 		FFStateScriptBase.OnDestroy();
 	}
 private:
-	virtual void OnStop() { // 在被中止的时候调用
+	virtual void OnStop() override { // 在被中止的时候调用
 		
 	}
-	virtual void OnFinish() { // 在正常完成调用
+	virtual void OnFinish() override { // 在正常完成调用
 		
 	}
 private:

@@ -3,3 +3,7 @@ CMakeFiles
 cmake_install.cmake
 *.bin
 Makefile
+/Tools/NodeEditor/GraphView/GraphicsItem/Parts/__pycache__/*.pyc
+*.pyc
+.idea
+/Tools/NodeEditor/*.log

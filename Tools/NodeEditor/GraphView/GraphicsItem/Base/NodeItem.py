@@ -4,6 +4,8 @@ from PyQt5.QtCore import QRect, QRectF
 from PyQt5.Qt import Qt, QApplication
 import time
 
+from Graph.Help.Util import *
+
 class FFNodeGraphicsItem(QGraphicsItem):
 	DEFAULT_TITLE_HEIGHT = 24 # 默认title的高度
 	DEFAULT_TITLE_PIXMAP_WIDTH = 24 # 默认title里面pixmap的宽度
@@ -20,8 +22,8 @@ class FFNodeGraphicsItem(QGraphicsItem):
 		self._IsSelected = False
 		self._BoundingRect = QRect(0, 0, 0, 0)
 		self._NodeRef = nodeRef
-		self._PinLinks = []
-		self._FlowLinks = []
+		self._PinLinkItems = []
+		self._FlowLinkItems = []
 
 		self._PinGroupItems = []
 		self._LinkItems = []
@@ -117,13 +119,27 @@ class FFNodeGraphicsItem(QGraphicsItem):
 		pass
 
 	def addFlowLink(self, flowItemOne, flowItemTwo):
-		pass
+		from GraphView.GraphicsItem.Parts.LinkItem import FFLinkItem
+		inFlowItem, outFlowItem = None, None
+		if flowItemOne._FlowRef._FlowFlag == FFFlag.FLAG_FLOW_IN:
+			inFlowItem, outFlowItem = flowItemOne, flowItemTwo
+		else:
+			inFlowItem, outFlowItem = flowItemTwo, flowItemOne
+		flowLink = FFLinkItem(None, inFlowItem, outFlowItem)
+		self.scene().addItem(flowLink)
+		self._FlowLinkItems.append(flowLink)
+
+		if flowItemOne._FlowRef._NodeRef == self._NodeRef:
+			flowItemTwo.GetNodeParent()._FlowLinkItems.append(flowLink)
+		else:
+			flowItemOne.GetNodeParent()._FlowLinkItems.append(flowLink)
 
 	def removeFlowLink(self, flowLinkItem):
 		pass
 
 	def trackAllLink(self):
-		pass
+		for flowLinkItem in self._FlowLinkItems:
+			flowLinkItem.trackLink()
 
 	def itemChange(self, change, Any):
 		if change == QGraphicsItem.ItemPositionHasChanged:
@@ -148,6 +164,7 @@ class FFNodeGraphicsItem(QGraphicsItem):
 			self.oldScenePos = new_pos
 			#self.setPos(self.scenePos() + delta_pos)
 			self.setNodePos(self.scenePos() + delta_pos)
+			self.scene().update()
 		elif self._MouseBtnDown == Qt.MiddleButton:
 			pass
 		elif self._MouseBtnDown == Qt.RightButton:

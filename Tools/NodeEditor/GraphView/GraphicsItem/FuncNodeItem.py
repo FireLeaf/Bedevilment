@@ -8,9 +8,9 @@ from GraphView.GraphicsItem.Parts.FlowGroupItem import FFFlowGroupItem
 from GraphView.GraphicsItem.Parts.PinGroupItem import FFPinGroupItem
 from GraphView.Help.ResUtil import FFResUtil
 
-class FFEventNodeItem(FFNodeGraphicsItem):
+class FFFuncBeginNodeItem(FFNodeGraphicsItem):
 	def __init__(self, nodeRef):
-		super(FFEventNodeItem, self).__init__(nodeRef)
+		super(FFFuncBeginNodeItem, self).__init__(nodeRef)
 		self._OutFlowItem = FFFlowGroupItem(self, nodeRef._OutFlow)
 		self._OutPinItems = []
 		self.createAllPinItems()
@@ -27,6 +27,38 @@ class FFEventNodeItem(FFNodeGraphicsItem):
 		for outPin in self._NodeRef._OutPins:
 			pinGroupItems = FFPinGroupItem(self, outPin)
 			self._OutPinItems.append(pinGroupItems)
+
+	def drawTitle(self, painter):
+		#QPainter.drawPixmap(4, 4, FFResUtil.)
+		painter.drawText(4, 16, "[E]")
+		painter.drawText(24 + 4, 16, self._NodeRef.GetName())
+		painter.drawLine(0, 24, self._BoundingRect.width(), 24)
+
+	def paint(self, painter, QStyleOptionGraphicsItem, widget=None):
+		self.drawBackground(painter)
+		self.drawTitle(painter)
+		self.trackAllLink()
+
+
+class FFFuncEndNodeItem(FFNodeGraphicsItem):
+	def __init__(self, nodeRef):
+		super(FFFuncEndNodeItem, self).__init__(nodeRef)
+		self._InFlowItem = FFFlowGroupItem(self, nodeRef._InFlow)
+		self._InPinItems = []
+		self.createAllPinItems()
+		self.layoutItems()
+		self.repositionHead()
+
+	def leftItems(self):
+		return self._InPinItems
+
+	def rightItems(self):
+		return []
+
+	def createAllPinItems(self):
+		for outPin in self._NodeRef._InPins:
+			pinGroupItems = FFPinGroupItem(self, outPin)
+			self._InPinItems.append(pinGroupItems)
 
 	def drawTitle(self, painter):
 		#QPainter.drawPixmap(4, 4, FFResUtil.)
