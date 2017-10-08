@@ -1,7 +1,6 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.Qt import *
-from NodeGraphicsView import FFNodeGraphicsView
 
 class FFTabBar(QTabBar):
 	def __init__(self, parent, *args, **kwargs):
@@ -46,7 +45,7 @@ class FFTabWidget(QTabWidget):
 		self._tabBar = FFTabBar(self)
 		self.setTabBar(self._tabBar)
 		self.setDocumentMode(False)
-		self.initTabs()
+		#self.initTabs()
 		self._tabBar.tabCloseRequested.connect(self.closeTab)
 
 	def closeTab(self, index):
@@ -54,10 +53,15 @@ class FFTabWidget(QTabWidget):
 		self.removeTab(index)
 		view.deleteLater()
 
-	def initTabs(self):
+	'''def initTabs(self):
 		#self.setStyleSheet("QTabBar::tab {width: 100px; }")
 		for i in range(1, 10):
 			nodeView = FFNodeGraphicsView(self)
 			self.addTab(nodeView, self.tr("Test".ljust(20)))
 			if i == 1:
-				self.setCurrentWidget(nodeView)
+				self.setCurrentWidget(nodeView)'''
+
+	def addGraphViewTab(self, name, graphView):
+		graphView.setParent(self)
+		self.addTab(graphView, self.tr(name.ljust(20)))
+		self.setCurrentWidget(graphView)

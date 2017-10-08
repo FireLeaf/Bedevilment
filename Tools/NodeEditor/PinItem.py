@@ -4,8 +4,8 @@ from PyQt5.QtGui import *
 from PyQt5.Qt import *
 
 class FFPinItem(QGraphicsPixmapItem):
-    def __init__(self, parent, *args, **kwargs):
-        super(QGraphicsPixmapItem, self).__init__(parent, *args, **kwargs)
+    def __init__(self):
+        super(FFPinItem, self).__init__()
         pixmap = QPixmap()
         pixmap.load("Res/pin.png")
         self.setPixmap(pixmap)

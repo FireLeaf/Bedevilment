@@ -4,12 +4,13 @@ from PyQt5.QtCore import *
 from PyQt5.Qt import QWheelEvent, QPainterPath
 from PyQt5.QtGui import *
 from PinItem import  FFPinItem
+from Utility.Log import FFLog
 
 import MainWindow
 
 class FFDragableGraphicItem(QGraphicsItem):
     def __init__(self, parent, *args, **kwargs):
-        super(QGraphicsItem, self).__init__(parent, *args, **kwargs)
+        super(FFDragableGraphicItem, self).__init__(parent, *args, **kwargs)
         #self.setAcceptHoverEvents(True)
         self._isMouseDown = False
         self._isSelected = False
@@ -26,17 +27,17 @@ class FFDragableGraphicItem(QGraphicsItem):
 
     def itemChange(self, change, Any):
         if change == QGraphicsItem.ItemPositionHasChanged:
-            print("Position changed")
+            FFLog.Logger().info("Position changed")
         return super(FFDragableGraphicItem, self).itemChange(change, Any)
 
     def hoverEnterEvent(self, event):
         cursor = QCursor(Qt.OpenHandCursor)
         QApplication.instance().setOverrideCursor(cursor)
-        print("Here1")
+        FFLog.Logger().debug("Here1")
 
     def hoverLeaveEvent(self, event):
         QApplication.instance().restoreOverrideCursor()
-        print("Here3")
+        FFLog.Logger().debug("Here3")
 
     def mouseMoveEvent(self, event):
         if self._isMouseDown:
@@ -139,11 +140,11 @@ class FFNodeGraphicsView(QGraphicsView):
         input = QLineEdit()
         inputItem.setWidget(input)
 
-        pinItem = FFPinItem(None)
+        pinItem = FFPinItem()
         pinItem.setPos(0, 80)
         pinItem.setParentItem(nodeItem)
 
-        pinItem = FFPinItem(None)
+        pinItem = FFPinItem()
         pinItem.setPos(188, 80)
         pinItem.setParentItem(nodeItem)
 
