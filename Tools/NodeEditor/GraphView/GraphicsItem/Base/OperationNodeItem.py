@@ -1,4 +1,4 @@
-from PyQt5.QtGui import QPainter
+from PyQt5.QtGui import QPainter, QColor
 
 from Graph.Help.Util import *
 
@@ -47,6 +47,7 @@ class FFOperationNodeItem(FFNodeGraphicsItem):
 	}'''
 	def drawTitle(self, painter):
 		#QPainter.drawPixmap(4, 4, FFResUtil.)
+		painter.setPen(QColor(0, 0, 0))
 		painter.drawText(4, 16, "B")
 		painter.drawText(24 + 4, 16, self._NodeRef.GetName())
 		painter.drawLine(0, 24, self._BoundingRect.width(), 24)

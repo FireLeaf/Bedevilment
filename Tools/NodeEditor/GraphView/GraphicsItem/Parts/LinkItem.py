@@ -46,4 +46,4 @@ class FFLinkItem(QGraphicsPathItem):
 		bezierPath.cubicTo(ctrl1, ctrl2, endPos)
 		self.setPath(bezierPath)
 
-		self.update()
+		#self.update()

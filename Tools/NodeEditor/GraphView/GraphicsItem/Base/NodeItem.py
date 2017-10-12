@@ -60,6 +60,8 @@ class FFNodeGraphicsItem(QGraphicsItem):
 	'''
 		排列在head以下的所有items，分左右
 	'''
+	HEIGHT_GAP = 4
+	LEFT_RIGHT_GAP = 20
 	def layoutItems(self):
 		lefts = self.leftItems()
 		rights = self.rightItems()
@@ -69,7 +71,7 @@ class FFNodeGraphicsItem(QGraphicsItem):
 		leftItemsHeight, leftMaxWidth = self.calcHeightAndMaxWidth(lefts)
 		rightItemsHeight, rightMaxWidth = self.calcHeightAndMaxWidth(rights)
 
-		maxItemsHeight = max(leftItemsHeight + len(lefts) * 4, rightItemsHeight + len(rights) * 4) # 添加gap之后的高度
+		maxItemsHeight = max(leftItemsHeight + len(lefts) * self.HEIGHT_GAP, rightItemsHeight + len(rights) * self.HEIGHT_GAP) # 添加gap之后的高度
 
 		leftStep = (maxItemsHeight - leftItemsHeight)  / (len(lefts) + 1)
 		stepSum = headHeight + leftStep
@@ -77,7 +79,7 @@ class FFNodeGraphicsItem(QGraphicsItem):
 			lefts[itemIdx].setPos(0, stepSum)
 			stepSum += lefts[itemIdx].boundingRect().height() + leftStep
 
-		maxWidth = max(headWidth, leftMaxWidth + 20 + rightMaxWidth)
+		maxWidth = max(headWidth, leftMaxWidth + self.LEFT_RIGHT_GAP + rightMaxWidth) # 20表示中間的空隙
 
 		rightStep = (maxItemsHeight - rightItemsHeight) / (len(rights) + 1)
 		stepSum = headHeight + rightStep
@@ -156,6 +158,8 @@ class FFNodeGraphicsItem(QGraphicsItem):
 
 	def mouseMoveEvent(self, event):
 		if self._MouseBtnDown == Qt.LeftButton:
+			if not self.isSelected():
+				self.scene().SelectUniqueItem(self)
 			QApplication.instance().restoreOverrideCursor()
 			cursor = QCursor(Qt.OpenHandCursor)
 			QApplication.instance().setOverrideCursor(cursor)
@@ -163,12 +167,16 @@ class FFNodeGraphicsItem(QGraphicsItem):
 			delta_pos = new_pos - self.oldScenePos
 			self.oldScenePos = new_pos
 			#self.setPos(self.scenePos() + delta_pos)
-			self.setNodePos(self.scenePos() + delta_pos)
-			self.scene().update()
+			#self.setNodePos(self.scenePos() + delta_pos)
+			self.scene().MoveSelectItemPos(delta_pos)
+			#self.scene().update()
 		elif self._MouseBtnDown == Qt.MiddleButton:
 			pass
 		elif self._MouseBtnDown == Qt.RightButton:
 			pass
+
+	def isSelected(self):
+		return self._IsSelected
 
 	def setSelected(self, isSelected):
 		if isSelected != self._IsSelected:
@@ -181,6 +189,7 @@ class FFNodeGraphicsItem(QGraphicsItem):
 
 		self._MouseBtnDown = event.button()
 
+
 	def mouseReleaseEvent(self, event):
 		# 如果距离点击的事件不到200ms，那么判定为点击事件
 		if (time.time() - self._LastMouseDownTime < 0.2):
@@ -189,7 +198,11 @@ class FFNodeGraphicsItem(QGraphicsItem):
 		QApplication.instance().restoreOverrideCursor()
 
 	def customMouseClickEvent(self, event):
-		pass
+		if event.button() == Qt.LeftButton:
+			if event.modifiers() == Qt.ControlModifier:
+				self.scene().ToggleSelect(self)
+			else:
+				self.scene().ToggleUniqueItem(self)
 
 	def mouseDoubleClickEvent(self, event):
 		pass

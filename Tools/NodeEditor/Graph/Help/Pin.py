@@ -12,6 +12,9 @@ class FFPin:
 	def SetDeafultValue(self, value):
 		self._CustomValue = value
 
+	def IsInPin(self):
+		return  self._PinFlag == FFFlag.FLAG_PIN_IN
+
 	def IsCompatibility(self, peerPin):
 		if peerPin == None:
 			return False

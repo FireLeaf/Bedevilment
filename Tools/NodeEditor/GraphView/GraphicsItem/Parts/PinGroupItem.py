@@ -4,11 +4,12 @@ from PyQt5.QtCore import QRect, QRectF
 
 from Graph.Help.Util import *
 from GraphView.GraphicsItem.Parts.PinItem import FFPinItem
+from GraphView.GraphicsItem.Parts.HLayoutItem import FFHLayoutItem
 
-class FFPinGroupItem(QGraphicsItem):
-	GAP = 4
+class FFPinGroupItem(FFHLayoutItem):
+	PIN_GAP = 4
 	def __init__(self, parentItem, pinRef):
-		super(FFPinGroupItem, self).__init__()
+		super(FFPinGroupItem, self).__init__(self.PIN_GAP)
 		self._PinRef = pinRef
 		self._PinItem = FFPinItem(pinRef)
 		self._PinItem.setParentItem(self)
@@ -18,44 +19,11 @@ class FFPinGroupItem(QGraphicsItem):
 		self._ValueItem = self.createValueItem()
 		if self._ValueItem:
 			self._ValueItem.setParentItem(self)
-		self._BoundRect = QRectF(0, 0, 0, 0)
-		self.layoutWidget()
+
+		locationLeft = self._PinRef.IsInPin()
+		self.SetItems([self._PinItem, self._NameItem, self._ValueItem], locationLeft)
 		self.setParentItem(parentItem)
 
-	def layoutWidget(self):
-		w, h = 0, 0
-		if self._PinRef._PinFlag == FFFlag.FLAG_PIN_IN:
-			self._PinItem.setPos(self.GAP, 0)
-			pinRect = self._PinItem.boundingRect()
-			self._NameItem.setPos(self.GAP + pinRect.width() + self.GAP, 0)
-			nameRect = self._NameItem.boundingRect()
-			valueWidth, valueHeight = 0, 0
-			if self._ValueItem != None:
-				self._ValueItem.setPos(self.GAP + pinRect.width() + self.GAP + nameRect.width() + self.GAP, 0)
-				valueWidth = self.GAP + self._ValueItem.boundingRect().width()
-				valueHeight = self._ValueItem.boundingRect().height()
-
-			w = self.GAP + pinRect.width() + self.GAP + nameRect.width() + valueWidth
-			h = max(valueHeight, pinRect.height(), nameRect.height())
-		else:
-			pinRect = self._PinItem.boundingRect()
-			self._PinItem.setPos(- pinRect.width() - self.GAP, 0)
-			nameRect = self._NameItem.boundingRect()
-			self._NameItem.setPos(- pinRect.width() - self.GAP - nameRect.width() - self.GAP, 0)
-			w = pinRect.width() + self.GAP + nameRect.width() + self.GAP
-			h = max(pinRect.height(), nameRect.height())
-		self._BoundRect = QRectF(0, 0, w, h)
-
-	def maxItemWidthHeight(self):
-		gapCount = 1
-		pinRect = self._PinItem.boundingRect()
-		nameRect = self._NameItem.boundingRect()
-		valueWidth, valueHeight = 0, 0
-		if self._ValueItem != None:
-			valueRect = self._ValueItem.boundingRect()
-			valueWidth, valueHeight = valueRect.width(), valueRect.height()
-			gapCount += 1
-		return  int(pinRect.width() + nameRect.width() + valueWidth + 2 * self.GAP), int(max(pinRect.height(), nameRect.height(), valueHeight))
 
 	def createValueItem(self):
 		if self._PinRef._PinFlag != FFFlag.FLAG_PIN_IN: return
@@ -82,9 +50,6 @@ class FFPinGroupItem(QGraphicsItem):
 			valueItem.setWidget(valueWidget)
 			return  valueItem
 		return  None
-
-	def boundingRect(self):
-		return self._BoundRect
 
 	def paint(self, paint, styleOption, widget=None):
 		pass

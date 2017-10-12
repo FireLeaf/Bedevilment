@@ -62,6 +62,7 @@ class FFFuncEndNodeItem(FFNodeGraphicsItem):
 
 	def drawTitle(self, painter):
 		#QPainter.drawPixmap(4, 4, FFResUtil.)
+		painter.setPen(QColor(0, 0, 0))
 		painter.drawText(4, 16, "[E]")
 		painter.drawText(24 + 4, 16, self._NodeRef.GetName())
 		painter.drawLine(0, 24, self._BoundingRect.width(), 24)
