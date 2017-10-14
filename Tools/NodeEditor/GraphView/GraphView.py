@@ -84,17 +84,18 @@ class FFNodeGraphView(QGraphicsView):
 			print("view release")
 			self._MidMouseDown = False
 		if self._SelectRegionItem != None:
+			self.scene().SelectNone()
 			rect = self._SelectRegionItem.mapToScene(self._SelectRegionItem.rect())
 			selectItems = self.scene().items(rect, Qt.IntersectsItemBoundingRect)
 			from GraphView.GraphicsItem.Base.NodeItem import FFNodeGraphicsItem
 			for item in selectItems:
 				if isinstance(item, FFNodeGraphicsItem):
-					self._GraphScene.SelectItem(item)
+					self._GraphScene.SelectItem(item, True)
 					#item.setSelected(True)
 			self.scene().removeItem(self._SelectRegionItem)
 			self._SelectRegionItem = None
 		#elif event.button() == Qt.LeftButton:
 		#	self._GraphScene.SelectNone()
 
-		if (time.time() - self._LastMouseDownTime < 0.2):
+		if (time.time() - self._LastMouseDownTime < 0.1):
 			self.scene().SelectNone()

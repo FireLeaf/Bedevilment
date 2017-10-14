@@ -31,5 +31,5 @@ class FFPinItem(FFKeyItem):
         QApplication.restoreOverrideCursor()
         for item in items:
             if isinstance(item, FFPinItem) and self.IsCompatibilityPinItem(item):
-                self.parentItem().AddPinLink(self, item)
+                self.GetNodeParent().AddPinLink(self, item)
                 break

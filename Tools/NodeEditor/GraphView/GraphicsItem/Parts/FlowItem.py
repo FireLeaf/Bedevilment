@@ -28,18 +28,6 @@ class FFFlowItem(FFKeyItem):
                     QApplication.setOverrideCursor(FFResUtil.ErrorCursor())
                 break
 
-    def GetNodeParent(self):
-        from GraphView.GraphicsItem.Base.NodeItem import FFNodeGraphicsItem
-        item = self
-        while True:
-            parent = item.parentItem()
-            if not parent:
-                return None
-            if isinstance(parent, FFNodeGraphicsItem):
-                return parent
-            item = parent
-        return None
-
     def OnReleaseItems(self, items):
         QApplication.restoreOverrideCursor()
         for item in items:

@@ -6,6 +6,7 @@ class FFGraphScene(QGraphicsScene):
 		super(FFGraphScene, self).__init__()
 		self._NodeItems = {}  # 所有的节点
 		self._GraphRef = None  # 对应的graph引用
+		self._TopZ = 0
 
 	def MoveSelectItemPos(self, deltaPos):
 		for node, nodeItem in self._NodeItems.items():
@@ -14,27 +15,32 @@ class FFGraphScene(QGraphicsScene):
 		self.update()
 
 	def ToggleSelect(self, item):
-		item.setSelected(not item.isSelected())
+		self.SelectItem(item, not item.isSelected())
 
 	def ToggleUniqueItem(self, item):
 		for node, nodeItem in self._NodeItems.items():
 			if item != nodeItem and nodeItem.isSelected():
-				nodeItem.setSelected(False)
+				self.SelectItem(nodeItem, False)
 		if item != None:
 			self.ToggleSelect(item)
 
 	def SelectUniqueItem(self, item):
 		for node, nodeItem in self._NodeItems.items():
 			if item != nodeItem and nodeItem.isSelected():
-				nodeItem.setSelected(False)
+				#nodeItem.setSelected(False)
+				self.SelectItem(nodeItem, False)
 		if item != None:
-			item.setSelected(True)
+			self.SelectItem(item, True)
+			#item.setSelected(True)
 
 	def SelectNone(self):
 		self.SelectUniqueItem(None)
 
-	def SelectItem(self, item):
-		item.setSelected(True)
+	def SelectItem(self, item, isSelected):
+		if item != None:
+			item.setZValue(isSelected if 1 else 0)
+			item.setSelected(isSelected)
+
 
 	def GetSelectedItems(self):
 		items = []

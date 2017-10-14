@@ -16,6 +16,18 @@ class FFKeyItem(QGraphicsPixmapItem):
 	def IsKeyIn(self):
 		return False
 
+	def GetNodeParent(self):
+		from GraphView.GraphicsItem.Base.NodeItem import FFNodeGraphicsItem
+		item = self
+		while True:
+			parent = item.parentItem()
+			if not parent:
+				return None
+			if isinstance(parent, FFNodeGraphicsItem):
+				return parent
+			item = parent
+		return None
+
 	def RebuildBerizer(self, event):
 		bezierPath = QPainterPath()
 		bezierPath.moveTo(0, 0)

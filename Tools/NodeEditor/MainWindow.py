@@ -30,7 +30,7 @@ class FFMainWindow(QMainWindow):
         tabs.addTab(QLabel("Hello"), "Hello")
         tabs.move(100, 100)
 
-        #centerDockWidget = QDockWidget(self.tr("WorkSpace"), self)
+        #centerDockWidget = QDockWidget(self.tr("Workspace"), self)
         #self.addDockWidget(Qt.RightDockWidgetArea)
         '''workSpaceView = FFNodeGraphicsView(self)
         self.setCentralWidget(workSpaceView)

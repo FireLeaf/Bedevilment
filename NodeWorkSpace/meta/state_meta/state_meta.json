@@ -1,23 +1,23 @@
-{
+锘縶
    "LifeCycleEvent" : {
 		"OnActive" : {
 			"ParamList" : [
 				{"EntityID":"int"}
 			],
-			"ToolTips" : "当前状态附加到实体上时调用",
+			"ToolTips" : "碌卤脟掳脳麓脤卢赂陆录脫碌陆脢碌脤氓脡脧脢卤碌梅脫脙",
 			"InitPos" : [90.8, 90, 88]
 		},
 		"OnSimulate":{
 			"ParamList" : [
 				{"FrameTime":"int"}
 			],
-			"ToolTips" : "当前状态附加到实体上时调用",
+			"ToolTips" : "碌卤脟掳脳麓脤卢赂陆录脫碌陆脢碌脤氓脡脧脢卤碌梅脫脙",
 			"InitPos" : [90.8, 90, 88]
 		},
 		"OnDeactive":{
 			"ParamList" : [
 			],
-			"ToolTips" : "当前状态附加到实体上时调用",
+			"ToolTips" : "碌卤脟掳脳麓脤卢赂陆录脫碌陆脢碌脤氓脡脧脢卤碌梅脫脙",
 			"InitPos" : [90.8, 90, 88]
 		}
 	}
