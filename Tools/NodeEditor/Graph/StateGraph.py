@@ -1,7 +1,7 @@
 
+from Graph.Graph import FFGraph
+
 import json
-
-
 class FFStateGraph(FFGraph):
     def __init__(self):
         self._MethodsGraph  = {} # 所有成员函数的图(Function Graph)

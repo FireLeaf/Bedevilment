@@ -1,0 +1,49 @@
+{
+	"Config":{
+		
+	},
+	"Property":[
+		{
+			"Name" : "_TriggerCount",
+			"Type" : "int"
+		},
+		{
+			"Name" : "_TestA",
+			"Type" : "string"
+		}
+	],
+	"Method":[
+		{
+			"Name"		: "TriggerJudge",
+			"Static"	: false,
+			"Parameters":[
+				{
+					"Name"	: "test1",
+					"Type"	: "int"
+				},
+				{
+					"Name"	: "test2",
+					"Type"	: "string"
+				}
+			],
+			"Return"	:[
+				{
+					"Name"	: "return1",
+					"Type"	: "int"
+				},
+				{
+					"Name"	: "return2",
+					"Type"	: "string"
+				}
+			]
+		},
+		{
+			"Name"		: "TestA",
+			"Static"	: true,
+			"Parameters":[
+			],
+			"Return"	:[
+			]
+		}
+	]
+}
